@@ -4,18 +4,20 @@
     <input type="number" v-model="num1" />
     <input type="number" v-model="num2" />
   </div>
-  <form v-on:submit.prevent="add">
-      <div class="button-group1"> <button type="submit" class="button">+</button> </div>
-  </form>
-  <form v-on:submit.prevent="minus">
-      <div class="button-group2"> <button type="submit" class="button">-</button></div>
-  </form>
-  <form v-on:submit.prevent="multiply">
-      <div class="button-group3">  <button type="submit" class="button">*</button></div>
-  </form>
-  <form v-on:submit.prevent="geteilt">
-      <div class="button-group4">  <button type="submit" class="button">÷</button></div>
-  </form>
+  <div class="button.group">
+   
+         <button type="submit" class="button" v-on:click.prevent="add">+</button> 
+  
+   
+         <button type="submit" class="button" v-on:click.prevent="minus">-</button>
+    
+    
+          <button type="submit" class="button" v-on:click.prevent="multiply">*</button>
+    
+    
+         <button type="submit" class="button" v-on:click.prevent="geteilt">÷</button>
+
+  </div>
  
 
   
@@ -33,7 +35,8 @@ export default {
     };
   },
   methods: {
-    add: function () {
+    add:
+            function () {
       this.sum = parseInt(this.num1, 10) + parseInt(this.num2, 10);
     },
     minus: function () {
@@ -50,26 +53,14 @@ export default {
 </script>
 <style>
  button {
-	display:inline-block;
+  display: inline;
 	height:40px;
 	width:138px;
-  margin: 10;
-  padding: 10;   
+  margin-top: 10; 
   border: 1px solid;
   cursor: pointer;
   }
 
-  .button-grop1, .button-gruop2, .button-group3, .button-group4 {
-    float: left;
-     width: 33.33333%;
-     padding: 20px;
-     background: #eee;
-     box-sizing: border-box;
+  
 
-  }
-
-  .button-group4 {
-
-    margin-right: 0;
-  }
 </style>
