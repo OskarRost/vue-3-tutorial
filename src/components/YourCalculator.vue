@@ -1,30 +1,24 @@
+
 <template>
+
   <h3>Calculator</h3>
+
   <div>
     <input type="number" v-model="num1" />
     <input type="number" v-model="num2" />
   </div>
+
   <div class="button.group">
-   
-         <button type="submit" class="button" v-on:click.prevent="add">+</button> 
-  
-   
+         <button type="submit" class="button" v-on:click.prevent="add">+</button>
          <button type="submit" class="button" v-on:click.prevent="minus">-</button>
-    
-    
           <button type="submit" class="button" v-on:click.prevent="multiply">*</button>
-    
-    
          <button type="submit" class="button" v-on:click.prevent="geteilt">÷</button>
 
   </div>
- 
 
-  
-  
-  
   <p>Result: {{ sum }}</p>
 </template>
+
 <script>
 export default {
   data() {
@@ -51,6 +45,7 @@ export default {
   },
 };
 </script>
+
 <style>
  button {
   display: inline;
@@ -60,7 +55,4 @@ export default {
   border: 1px solid;
   cursor: pointer;
   }
-
-  
-
 </style>
