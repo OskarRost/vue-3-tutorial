@@ -1,6 +1,10 @@
 
 <template>
-
+<ul>
+  <li><a class="active" href="#home">Menü</a></li>
+  <li><a href="#news">Calculator</a></li>
+  <li><a href="#contact">Kontakt</a></li>
+</ul>
   <h3>Calculator</h3>
 
   <div>
@@ -10,9 +14,9 @@
   <div class="button.group">
          <button type="submit" class="button" v-on:click.prevent="add">+</button>
          <button type="submit" class="button" v-on:click.prevent="minus">-</button>
-          <button type="submit" class="button" v-on:click.prevent="multiply">*</button>
+         <button type="submit" class="button" v-on:click.prevent="multiply">*</button>
          <button type="submit" class="button" v-on:click.prevent="geteilt">÷</button>
-  </div
+  </div>
   <p>Result: {{ sum }}</p>
 </template>
 
@@ -44,6 +48,36 @@ export default {
 </script>
 
 <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
  button {
   display: inline;
 	height:40px;
