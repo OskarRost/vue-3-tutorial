@@ -1,0 +1,16 @@
+h1 {
+    color: green;
+}
+ol {
+    color: red;
+}
+h2 {
+    color: green ;
+}
+table, th, td {
+    border: 1px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}

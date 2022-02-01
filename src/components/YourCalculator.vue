@@ -1,7 +1,7 @@
 
 <template>
 <ul>
-  <li><a class="active" href="#link website">Menü</a></li>
+  <li><a class="active" href="">Menü</a></li>
   <li><a href="#link website">Calculator</a></li>
   <li><a href="#link website">Kontakt</a></li>
 </ul>
